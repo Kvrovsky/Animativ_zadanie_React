@@ -1,30 +1,31 @@
-import { Splide, SplideSlide } from "@splidejs/react-splide";
+import { grey, yellow } from "@mui/material/colors";
+import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import '@splidejs/splide/dist/css/splide.min.css';
 
 const Images = [
     {
         number: "1",
-        color: "grey",
+        css: {color: 'blue' }
     },
     {
         number: "2",
-        color: "yellow",
+        css: { color: 'red' }
     },
     {
         number: "3",
-        color: "black",
+        css: { color: 'green' }
     },
     {
         number: "4",
-        color: "red",
+        css: { color: 'yellow' }
     },
     {
         number: "5",
-        color: "blue",
+        css: { color: 'pink' }
     },
     {
         number: "6",
-        color: "green",
+        css: { color: 'purple' }
     }
 ];
 
@@ -32,28 +33,22 @@ const Images = [
 function ImgAdd() {
 
     return (
-        <Splide
-        options={
-            {
-                perPage:3,
-                type:'loop',
-                height:'10rem',
-                direction:'ttb',
-            }
-        }>
-            <SplideSlide>
-            <div className="gallery-img">
-            {Images.map((Image) => (
-                <div className="gallery-img">
-                <p className="gallery-img-text" key={Image.number}> Image{Image.number}</p>
-                </div>
-                
-                
+        <Splide tag="section"
+            options={
+                {
+                    perPage: 3,
+                    type: 'loop',
+                    perMove: 2,
 
+                }
+            }>
+            {Images.map((Image) => (
+                <SplideSlide>
+                    <p style={Image.css} className="gallery-img-text" key={Image.number} > Image{Image.number}</p>
+
+                </SplideSlide>
             ))}
-            </div>
-            </SplideSlide>
-    </Splide>
+        </Splide>
     );
 }
 

@@ -11,10 +11,16 @@ import pngg3 from './img/pngg3.png';
 import fff from './img/fff.png';
 import ImgAdd from './components/gallery-img';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
+import SimpleSlider from './components/gallery-img';
+import { MultiSelectUnstyled } from '@mui/base';
+import MultipleItems from './components/gallery-img';
+
+
 
 function App() {
   return (
     <>
+    <div className='container'></div>
       <header>
         <div className='flex-container'>
           <div className='napisy'>
@@ -58,8 +64,8 @@ function App() {
           <h2 className='napis7'>1-008 005 006</h2>
 
         </div>
-        <p><i class="arrow left"></i></p>
-        <p><i class="arrow right"></i></p>
+        <p><i class="arrow lewa"></i></p>
+        <p><i class="arrow prawa"></i></p>
 
         <img src={qwe} alt="7d8587" />
 
@@ -168,14 +174,59 @@ function App() {
               </div>
             </div>
           </div>
-        </div>
+        </div>  
 
         <div className="container2">
           <ImgAdd/>
-          
         </div>
+        <footer>
+      <div className='container'>
+      <div className='row'>
+        <div className='fcolumn left'>
+          <h1> Navigation</h1>
+          <ul>
+            <li>Home</li>
+            <li>About us</li>
+            <li>Menu</li>
+            <li>Reservation</li>
+            <li>Recipe</li>
+            <li>Blog</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+        <div className='fcolumn middle'>
+          <ul>
+          <h1> News letter</h1>
+         <li> <a> Enter your email address and subscribe daily newsletter</a> </li>
+         <li><input type="text" placeholder='Email Address'></input>
+          <button className='sub'>SUBSCRIBE</button> </li>
+          <li>
+            <button className='b1'></button>
+            <button className='b2'></button>
+            <button className='b3'></button>
+          </li>
+          </ul>
+        </div>
+        <div className='fcolumn right'>
+          <h1> Our app avilable</h1>
+          <ul>
+            <li><button className='get'> <img src="img/icon_apple.png"></img>Avilable on the <br></br>
+            <span>App Store </span>
+            </button></li>
+            <li><button className='get'> <img src="img/icon_Google_Play.png"></img> Get it on <br></br>
+            <span>Google Play </span>
+            </button></li>
+          </ul>
+        </div>
+      </div>
+      </div>
+    </footer>
+   
+    <div className='dol'> <p className='copyright'> 2018 © LUXURY RESTAURANT, ALL RIGHTS RESERVED</p></div>
+    </main></>
 
-      </main></>
+
+      
 
   );
 }

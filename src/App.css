@@ -244,7 +244,7 @@ background-color: #FEA100;
   
 }
 
-.right {
+.prawa {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
   margin-left: 1060px;
@@ -253,7 +253,7 @@ background-color: #FEA100;
 
 }
 
-.left {
+.lewa {
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
   margin-top: 250px;
@@ -496,5 +496,110 @@ padding-bottom: 50px;
   align-items: center;
   display: flex;
   justify-content: center;
+  height: 510px;
+  background-color: #565F61;
+  font-size: 30px;
 }
 @media (min-width: 40em) {  .split2 {    flex-direction: row;  }  .split2 > * {    flex-basis: 100%;  }  .split2 > * + * {    margin-left: 2em;  }}
+
+.szerokosci{
+  width: 100%;
+}
+
+footer {
+  background-color: #373844;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 100px;
+  padding-bottom: 250px;
+}
+footer h1 {
+  color: white;
+  font-size: 20px;
+  padding-bottom: 30px;
+}
+footer li {
+  padding-bottom: 7px;
+  color: #ADB2B7;
+}
+.sub {
+  background-color: #FEA100;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+footer a {
+  color:#ADB2B7;
+}
+footer input {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius:5px ;
+  background-color: #373844;
+}
+.right img {
+  vertical-align: middle;
+  margin-right: 5px;
+  float: left;
+  margin-left: 10px;
+}
+.get {
+  background-color: #52535E;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  height: 70px;
+  width: 60%;
+  font-size: 10px;
+}
+.copyright {
+  text-align:center;
+  padding-top:24px;
+  opacity:0.3;
+  font-size:13px;
+  margin-bottom:0;
+  COLOR: #ADB2B7;
+  
+}
+.get span {
+  font-size: 14px;
+}
+
+.b1 {
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  border: none;
+  background-color: #3B5998;
+  margin-right: 5px;
+}
+.b2 {
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  border: none;
+  background-color: #55ACEE;
+  margin-right: 5px;
+}
+.b3 {
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  border: none;
+  background-color: #DD4B39;
+}
+
+.fcolumn {  float: left;}
+.left, .right {  width: 25%;}
+.middle {  width: 50%;}
+
+.dol{
+  background-color:#373844 ;
+  padding-bottom: 50px;
+}
