@@ -135,20 +135,7 @@ function App() {
 
 </div>
           </div>
-          <div className='happy'> 
-<div className='zdjecie11'> 
-<h1 className='ttt22'>IMAGE 269x295</h1>
-<img src={pngg3} alt="pngg3"/>  
-</div>
-<div className='tekst11'> 
-<h1 className='ttt'>Happy Clients</h1> 
-<h2 className='ttt2'>Best atmosphere and food</h2> 
-<h3 className='ttt3'>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident.</h3>
-<h4 className='ttt4'>DR. PRABAKARAN JOHN</h4>
-</div>
-</div>
-
-<div className='reserve'>
+          <div className='reserve'>
       <img className='zdj1' src={fff}></img>
       <img className='zdj2' src={fff}></img>
         <div className='container'>
@@ -179,6 +166,20 @@ function App() {
           </div>
         </div>
       </div>
+
+          <div className='happy'> 
+<div className='zdjecie11'> 
+<h1 className='ttt22'>IMAGE 269x295</h1>
+<img src={pngg3} alt="pngg3"/>  
+</div>
+<div className='tekst11'> 
+<h1 className='ttt'>Happy Clients</h1> 
+<h2 className='ttt2'>Best atmosphere and food</h2> 
+<h3 className='ttt3'>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident.</h3>
+<h4 className='ttt4'>DR. PRABAKARAN JOHN</h4>
+</div>
+</div>
+
 
       
 
