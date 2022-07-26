@@ -1,11 +1,10 @@
-
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import '@splidejs/splide/dist/css/splide.min.css';
 
 const Images = [
     {
         number: "1",
-        css: {color: 'blue' }
+        css: {  color: 'blue' }
     },
     {
         number: "2",
@@ -30,22 +29,22 @@ const Images = [
 ];
 
 
-function ImgAdd() {
+function Gallerybackground() {
 
     return (
         <Splide tag="section"
             options={
                 {
-                    perPage: 3,
+                    perPage: 1,
                     type: 'loop',
-                    perMove: 2,
-                    
+                    perMove: 1,
+                    autoplay: true,
                 }
                 
             } >
             {Images.map((Image) => (
                 <SplideSlide>
-                    <p style={Image.css} className="gallery-img-text" key={Image.number} > Image{Image.number}</p>
+                    <p style={Image.css} className="gallery-background-img-text" key={Image.number} > Image{Image.number}</p>
 
                 </SplideSlide>
             ))}
@@ -54,4 +53,4 @@ function ImgAdd() {
 }
 
 
-export default ImgAdd
+export default Gallerybackground
