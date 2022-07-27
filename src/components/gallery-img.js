@@ -36,7 +36,7 @@ function ImgAdd() {
         <Splide tag="section"
             options={
                 {
-                    perPage: 3,
+                    perPage: 2,
                     type: 'loop',
                     perMove: 2,
                     

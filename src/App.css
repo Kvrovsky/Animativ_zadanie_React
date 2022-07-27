@@ -110,13 +110,6 @@ header {
   padding-bottom: 20px;
 }
 
-.icon_plate {
-  width: 10%;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-}
-
 .btn {
   background-color: #fea100;
 }
@@ -154,18 +147,15 @@ header {
   width: 100%;
   position: absolute;
 }
-.img-text-bottom  a{
-  
+.img-text-bottom a {
   font-size: 20px;
   color: #fea100;
   text-decoration: none;
 }
-.img-text-bottom  h2{
-  
+.img-text-bottom h2 {
   color: white;
   font-size: 30px;
 }
-
 
 .arrow {
   border: solid white;
@@ -229,11 +219,9 @@ header {
   width: 320px;
   height: 335px;
   z-index: 2;
-
 }
 
 .special-offer-content2 {
-
   position: absolute;
   right: 20px;
   top: 70px;
@@ -278,12 +266,6 @@ header {
 
 .offer-special {
   width: 50%;
-}
-
-.cli {
-  margin-left: 930px;
-  margin-right: 600px;
-  margin-top: 10%;
 }
 
 .best {
@@ -346,6 +328,8 @@ header {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  border-radius: 5px;
+  margin-right: 5px;
 }
 .zdj1 {
   transform: translateY(-100px);
@@ -368,8 +352,7 @@ header {
   text-align: center;
   padding-top: 20px;
 }
-.wrapper2 span {
-}
+
 .napisr a {
   color: white;
 }
@@ -421,8 +404,6 @@ header {
     margin-left: 2em;
   }
 }
-
-
 
 footer {
   background-color: #373844;
@@ -564,7 +545,6 @@ footer input {
   left: 400px;
   width: 100%;
   opacity: 1;
-
 }
 
 .container a {
@@ -612,9 +592,8 @@ footer input {
   z-index: 2;
   position: absolute;
   left: 50%;
-  top:0px
+  top: 0px;
 }
-
 
 .slider-text {
   position: absolute;
@@ -647,15 +626,15 @@ footer input {
 
 .logo-text a {
   bottom: 0px;
-  
+
   font-size: 14px;
 }
 
 #phone-number {
   font-size: 36px;
 }
-.background-slider { 
-  position:relative;
+.background-slider {
+  position: relative;
   z-index: 1;
 }
 .gallery-background-img-text {
@@ -665,8 +644,39 @@ footer input {
   height: 510px;
   background-color: #565f61;
   font-size: 30px;
-
 }
+
 @media screen and (max-width: 1400px) {
-  
+  .second-section-container {
+    display: grid;
+    width: 100%;
+  }
+  @media screen and (max-width:900px){
+    .Today-Special { 
+      width: 100%;
+    }
+    
+    .container2 { 
+      width: auto;
+    }
+   
+    .container { 
+      width: auto;
+    }
+    .happy{
+      margin-left: 0px;
+      display: grid;
+    }
+    .slider { 
+      width: 170px;
+    }
+  }
+  .container { 
+    width: auto;
+  }
+  .zdj1 { display: none;}
+  .zdj2  {display: none;}
+  .foodmenu {
+    width: 80%;
+   }
 }

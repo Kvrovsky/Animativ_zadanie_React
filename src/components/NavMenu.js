@@ -1,30 +1,51 @@
-import icon_cart from '../img/icon_cart.png';
-import icon_plate from '../img/icon_plate.png';
+import icon_cart from "../img/icon_cart.png";
+import icon_plate from "../img/icon_plate.png";
+import "./navbar/navmenu.css";
 
+
+import React, { useState, useEffect } from "react";
 function NavMenu() {
-    return (
-        <div className='flex-container'>
-            <div className='napisy'>
-                <h1 className='napis1'>LUXURY</h1>
-                <h2 className='napis2'>Resteurant</h2>
-            </div>
-            <ul className='Nav-menu-list'>
-                <li><a  href="#">HOME</a></li>
-                <li><a  href="#">MENU</a></li>
-                <li><a  href="#">RESERVATION</a></li>
-                <li><a  href="#">RECIPE</a></li>
-                <li><a  href="#">BLOG</a></li>
-                <li><a  href="#">PAGES</a></li>
-                <li><a  href="#">CONTACT</a></li>
-                <div className='zdjecie1'>
-                    <img src={icon_cart} alt="icon_cart" />
-                </div>
-            </ul>
-            <div className='ramka1'>
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const [toggleMenu, setToggleMenu] = useState(false);
+  const toggleNav = () => {
+    setToggleMenu(!toggleMenu);
+  };
+  useEffect(() => {
+    const changeWidth = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", changeWidth);
+  }, []);
+
+  return (
+    <nav>
+      {(toggleMenu || screenWidth > 1050 ) && (
+        <ul className="list">
+          <li className="items">
+            <a>Luxury Restaurant</a>
+          </li>
+          <li className="items">Home</li>
+          <li className="items">Menu</li>
+          <li className="items">Reservation</li>
+          <li className="items">Recipe</li>
+          <li className="items">Blog</li>
+          <li className="items">Pages</li>
+          <li className="items">Contact</li>
+          <img src={icon_cart} className="img-menu" />
+          <li className="booking-text">
+            <div>
                 <img className='icon_plate' src={icon_plate} alt="icon_plate" />
-                <a className='napisz' href="#">BOOK YOUR TABLE</a>
+                <a className='book-text' href="#">BOOK YOUR TABLE</a>
             </div>
-        </div>
-    );
+          </li>
+        </ul>
+      )}
+
+      <button onClick={toggleNav} className="btn">
+        MENU
+      </button>
+    </nav>
+  );
 }
-export default NavMenu 
+export default NavMenu;

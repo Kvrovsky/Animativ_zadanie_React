@@ -11,9 +11,17 @@ function Reservation() {
           <div>
             <input type="text" placeholder="Name"></input>
             <br></br>
-            <input type="text" placeholder="Time"></input>
+            <input type="time" placeholder="Time"></input>
             <br></br>
             <input type="text" placeholder="Guests"></input>
+            <br></br>
+          </div>
+          <div>
+            <input type="email" placeholder="Email address"></input>
+            <br></br>
+            <input type="date" placeholder="Date"></input>
+            <br></br>
+            <input type="phone" placeholder="Phone"></input>
             <br></br>
             <div className="wrapper2">
               <button> MAKE RESERVATION</button>
@@ -25,14 +33,6 @@ function Reservation() {
                 </span>
               </div>
             </div>
-          </div>
-          <div>
-            <input type="text" placeholder="Email address"></input>
-            <br></br>
-            <input type="text" placeholder="Date"></input>
-            <br></br>
-            <input type="text" placeholder="Phone"></input>
-            <br></br>
             <p>1-007 000 005</p>
           </div>
         </div>
